@@ -1,0 +1,12 @@
+name: woosh
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.5.0
+  - pytest=9.0.3
+  - einops=0.8.1
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121

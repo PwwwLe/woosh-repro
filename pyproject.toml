@@ -1,0 +1,16 @@
+[project]
+name = "woosh-repro"
+version = "0.1.0"
+description = "Tiny runnable Woosh reproduction for smoke tests and examples"
+requires-python = ">=3.12"
+dependencies = [
+    "einops",
+    "numpy",
+    "pytest",
+    "torch",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
