@@ -1,9 +1,3 @@
-"""Woosh-DFlow 官方 distilled text-to-audio 推理脚本。
-
-加载 ``FlowMapFromPretrained`` student wrapper，使用固定 4-step Euler
-schedule 和 renoise 生成 latent，再经 Woosh-AE 解码保存为 wav。
-"""
-
 import os
 import time
 

@@ -1,5 +1,8 @@
 cache_dir
 outputs
+!outputs/
+!outputs/README.md
+!outputs/.gitkeep
 !sfxfm/utils/dist
 .DS_Store
 
@@ -122,4 +125,7 @@ cython_debug/
 
 .DS_Store
 outputs/
+!outputs/
+!outputs/README.md
+!outputs/.gitkeep
 weights*.safetensors

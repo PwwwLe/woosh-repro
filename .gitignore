@@ -1,0 +1,28 @@
+# Local reproduction artifacts
+.DS_Store
+.env
+.venv/
+
+# Official Woosh runtime artifacts
+Woosh-main/outputs/*
+!Woosh-main/outputs/README.md
+!Woosh-main/outputs/.gitkeep
+Woosh-main/samples/*
+!Woosh-main/samples/README.md
+!Woosh-main/samples/.gitkeep
+Woosh-main/checkpoints/**/weights.*
+Woosh-main/checkpoints/**/*.safetensors
+Woosh-main/checkpoints/**/*.pt
+Woosh-main/checkpoints/**/*.ckpt
+Woosh-main/checkpoints/**/*.pth
+
+# Reproduction experiment outputs
+experiments/logs/*
+!experiments/logs/.gitkeep
+experiments/runs/*
+!experiments/runs/.gitkeep
+
+# Official Woosh large assets
+Woosh-main/checkpoints/
+Woosh-main/downloads/
+Woosh-main/samples/

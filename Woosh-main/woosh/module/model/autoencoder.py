@@ -1,17 +1,9 @@
-"""底层 autoencoder 容器。
-
-这些类不处理 checkpoint，只组合传入的 encoder/decoder，并定义普通 AE 与
-VAE 的 ``forward``、``encode``、``decode`` 协议。
-"""
-
 import torch
 
 from .blocks import DiagonalGaussianDistribution
 
 
 class AutoEncoder(torch.nn.Module):
-    """确定性 autoencoder，可选在 latent 上加入 Gaussian noise。"""
-
     def __init__(self, encoder, decoder, latent_noise: float = 0):
         super().__init__()
         self.encoder = encoder
